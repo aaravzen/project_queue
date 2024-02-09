@@ -1,0 +1,140 @@
+Queue Number,Latitute,Longitude,Queue Date,Substation Name,Interdependency Status
+VA17002, , , 1/17/17, Navy Sub South and North,, Project A
+VA18005, , , 2/7/18, Virginia Hills, Project A
+VA18100, 37.335722, -77.461585, 11/1/18, Locks, Project A
+VA18101, 37.312174, -77.461586, 11/1/18, Harrowgate, Project B
+VA18102, 37.3284, -77.4599, 11/1/18, Tyler, Project A
+VA18105, 37.335928, -77.461589, 11/1/18, Tyler, Project A
+VA18107, 37.335928, -77.468535, 11/1/18, Iron Bridge, Project A
+VA18108, 37.335928, -77.468536, 11/1/18, Iron Bridge, Project B
+VA18120, 36.827045, -77.51859, 11/20/18, Fields, Project A
+VA18121, 36.827045, -77.51859, 11/20/18, Fields, Project B
+VA19054, 37.181384, -77.538173, 5/1/19, Locks, Project B
+VA19081, , , 7/17/19, Van Dorn, Project A
+VA19106, 37.5562, -76.4436, 8/26/19, Harmony Village, Project A
+VA19123, 37.564517, -76.357082, 9/6/19, Harmony Village, Project B
+VA19132, 36.888545, -76.611078, 10/22/19, Smithfield, Project A
+VA19135, 36.4637, -76.0032, 11/14/19, Pendleton, Project A
+VA19143, 36.714753, -76.679513, 11/27/19, Oak Ridge, Project A
+VA19144, 36.7146, -76.68662, 11/27/19, Oak Ridge, Project B
+VA20047, 38.016883, -78.459431, 2/21/20, Charlottesville, Project A
+VA20074, 38.660199, -78.783753, 4/29/20, Timberville, Project A
+VA20075, 38.660199, -78.783753, 4/29/20, Timberville, Project B
+VA20121, 37.814662, -78.23592, 6/3/20, Bremo, Project A
+VA20122, 37.814662, -78.23592, 6/3/20, Bremo, Project B
+VA20133, 36.823414, -77.48149, 6/16/20, Jarratt, Project A
+VA20159, 36.825796, -77.483723, 7/6/20, Jarratt, Project B
+VA20195, 37.773667, -77.356397, 7/24/20, Pearsons, Project A
+VA20201, 38.023283, -79.019775, 8/4/20, Stuarts Draft, Project A
+VA20209, 37.1887704, -78.21621637, 8/4/20, Flat Creek, Project A
+VA20232, 37.4477159, -77.208455, 8/28/20, Turner, Project A
+VA20234, 37.370037, -77.035565, 8/28/20, Providence Forge, Project A
+VA20237, 37.58688, -76.854188, 8/28/20, West Point, Project A
+VA20240, 38.034093, -79.067302, 8/28/20, Stuarts Draft, Project B
+VA20253, 36.744686, -78.953513, 9/10/20, Sinai, Project A
+VA20268, 37.760711, -77.47709, 9/22/20, Hanover, Project A
+VA20281, 37.3632, -76.532197, 9/25/20, White Marsh, Project A
+VA20290, 37.764667, -77.437185, 10/2/20, Hanover, Project A
+VA20291, 37.764667, -77.437185, 10/2/20, Hanover, Project B
+VA20316, 37.366935, -76.941571, 10/8/20, Providence Forge, Project B
+VA20318, 37.455453, -76.342647, 10/8/20, Wan, Project A
+VA20323, 37.38264, -76.584511, 10/8/20, White Marsh, Project A
+VA20337, 37.883601, -76.66328, 10/8/20, Northern Neck, Project A
+VA20340, 37.459778, -76.34725, 10/8/20, Wan, Project B
+VA20342, 37.819165, -76.798386, 10/8/20, Dunnsville, Project A
+VA20343, 37.8224625, -76.799888, 10/8/20, Dunnsville, Project B
+VA20348, 36.681924, -78.874995, 10/8/20, Welco, Project A
+VA20349, 36.681924, -78.874995, 10/8/20, Welco, Project B
+VA20360, 36.648788, -76.148627, 10/8/20, Hickory, Project A
+VA20361, 36.636653, -76.157798, 10/8/20, Hickory, Project B
+VA20367, 37.659867, -77.22097, 10/9/20, Old Church, Project A
+VA20368, 37.659867, -77.22097, 10/9/20, Old Church, Project B
+VA20371, 37.519653, -78.472161, 10/9/20, Buckingham, Project A
+VA20393, 36.810455, -76.75596, 10/14/20, Myrtle, Project A
+VA20400, 38.244334, -77.203437, 10/15/20, Arnolds Corner, Project B
+VA20402, 36.806374, -78.732502, 10/15/20, Mount Laurel, Project A
+VA20415, 37.150602, -78.635375, 10/16/20, Pamplin, Project A
+VA20416, 37.967278, -76.527861, 10/16/20, Northern Neck, Project A
+VA20418, 37.935651, -76.50113, 10/16/20, Northern Neck, Project B
+VA20422, 37.467928, -76.328469, 10/16/20, Wan, Project A
+VA20426, 37.365372, -76.592114, 10/16/20, White Marsh, Project B
+VA20427, 37.465877, -78.309703, 10/16/20, Buckingham, Project A
+VA20428, 37.476911, -78.301593, 10/16/20, Buckingham, Project B
+VA20429, 37.628375, -76.935374, 10/16/20, West Point, Project B
+VA20439, 37.671422, -76.379911, 10/16/20, Ocran, Project A
+VA20472, 37.960139, -76.765255, 10/30/20, Northern Neck, Project B
+VA20479, 38.257822, -77.243459, 10/30/20, Arnolds Corner, Project B
+VA20507, 38.102135, -78.982079, 11/16/20, Fishersville, Project A
+VA20516, 38.213733, -78.818519, 11/17/20, Grottoes, Project A
+VA20517, 38.2381306, -78.0992694, 11/17/20, Orange, Project A
+VA20518, 36.828768, -78.737959, 11/17/20, Mount Laurel, Project B
+VA20538, 36.730905, -78.112708, 12/7/20, South Hill, Project B
+VA20553, 37.453141, -76.567131, 12/21/20, Wan, Project B
+VA21023, 37.0897989962618, -76.3853447885233, 1/8/21, Peninsula, Project A
+VA21025, 37.509722, -78.452038, 1/8/21, Buckingham, Project B
+VA21027, 37.269226, -77.513515, 1/8/21, Locks, Project A
+VA21028, 38.09994, -78.96227, 1/8/21, Fishersville, Project B
+VA21041, 36.6888, -76.035149, 1/14/21, West Landing, Project A
+VA21042, 36.6888, -76.035149, 1/14/21, West Landing, Project B
+VA21045, 38.034176, -77.38147, 1/14/21, St John's, Project A
+VA21046, 38.034176, -77.38147, 1/14/21, St John's, Project B
+VA21057, 37.025225, -76.649544, 1/14/21, Poolesville, Project A
+VA21058, 37.025225, -76.649544, 1/14/21, Poolesville, Project B
+VA21069, 36.618511, -76.587639, 1/28/21, Suffolk, Project A
+VA21070, 36.617222, -76.578501, 1/28/21, Suffolk, Project B
+VA21071, 37.419611, -76.901328, 1/28/21, Lanexa, Project A
+VA21072, 37.419611, -76.901328, 1/28/21, Lanexa, Project B
+VA21075, 36.7734972, -76.6899556, 1/28/21, Myrtle, Project B
+VA21076, 38.2535611, -77.9970583, 1/28/21, Orange, Project B
+VA21087, 38.073665, -76.655655, 1/28/21, Westmoreland, Project A
+VA21088, 38.073665, -76.655655, 1/28/21, Westmoreland, Project B
+VA21091, 36.927688, -76.97999, 1/28/21, Wakefield, Project B
+VA21095, 37.183258, -78.189925, 1/28/21, Flat Creek, Project B
+VA21105, 37.003444, -79.014583, 1/28/21, Perth, Project A
+VA21107, 37.00468, -78.973005, 1/28/21, Perth, Project A
+VA21127, 38.063088, -78.764571, 2/3/21, Dooms 115 kV, Project A
+VA21133, 37.473371, -77.29983, 2/16/21, Turner, Project A
+VA21144, 38.0880417, -78.9571028, 2/16/21, Fishersville, Project A
+VA21161, 36.6852972, -76.7694917, 2/22/21, Watkins Corner, Project A
+VA21167, 36.745028, -78.992509, 2/22/21, Sinai, Project B
+VA21191, 37.497411, -76.841171, 3/8/21, Correctional, Project A
+VA21192, 38.2245, -77.0033, 3/8/21, Oak Grove, Project A
+VA21196, 36.887, -76.696, 3/8/21, Smithfield, Project A
+VA21201, 38.259446, -77.413218, 3/8/21, Fredericksburg, Project A
+VA21202, 37.81845001933, -79.74692971713, 3/8/21, Clifton Forge, Project A
+VA21207, 37.415086, -77.351476, 3/8/21, Turner, Project B
+VA21237, 38.2434499796768, -78.8146090022903, 3/27/21, Grottoes, Project B
+VA21238, 38.174, -76.971, 3/27/21, Oak Grove, Project A
+VA21241, 36.91404, -76.69594, 3/27/21, Smithfield, Project B
+VA21243, 38.062863, -78.864667, 3/27/21, Dooms 115 kV, Project A
+VA21244, 38.514733, -77.725514, 3/27/21, Remington, Project A
+VA21248, 36.733971, -78.964307, 3/27/21, Sinai, Project B
+VA21262, 36.897883, -76.564989, 4/3/21, Benns Church, Project A
+VA21265, 36.7765, -76.63212, 4/3/21, Kings Fork, Project A
+VA21275, 37.140026, -79.294104, 4/14/21, Altavista, Project A
+VA21276, 37.871774, -76.351798, 4/14/21, Lancaster, Project A
+VA21277, 37.88148, -76.33722, 4/14/21, Lancaster, Project B
+VA21283, 37.0069, -78.221, 4/14/21, Victoria, Project A
+VA21301, 36.621676, -78.621234, 5/3/21, Clarksville, Project A
+VA21302, 37.903664, -79.243295, 5/3/21, Fairfield, Project A
+VA21304, 37.1575707439147, -76.579929492, 5/3/21, Ft. Eustis, Project A
+VA21305, 38.879, -78.552, 5/3/21, Edinburg, Project A
+VA21319, 38.554273, -77.783281, 5/19/21, Remington, Project A
+VA21320, 37.456, -76.843, 5/19/21, Correctional, Project B
+VA21325, , , 5/19/21, Poe, Project A
+VA21332, 36.929746, -76.55565, 5/19/21, Benns Church, Project B
+VA21356, 36.637505, -76.9503, 6/4/21, Watkins Corner, Project B
+VA21357, 36.944935, -77.474075, 6/4/21, Sapony, Project A
+VA21368, 36.66487, -76.19646, 6/10/21, Fentress, Project A
+VA21382, 37.25273, -77.441378, 6/22/21, Harvell, Project A
+VA21390, 37.09959, -79.31029, 6/22/21, Otter River, Project B
+VA21401, 37.102156, -77.356728, 7/2/21, Poe, Project B
+VA21405, 36.70481, -78.04257, 7/2/21, Brodnax, Project A
+VA21411, 36.710659, -76.564324, 7/2/21, Suffolk, Project A
+VA21420, 36.764389, -79.414944, 7/7/21, Banister, Project B
+VA21424, 37.020847, -77.101807, 7/19/21, Waverly, Project A
+VA21440, 37.128768, -79.224342, 7/21/21, Otter River, Project A
+VA21456, 37.014388, -77.67555, 7/26/21, Sapony, Project B
+VA21458, 36.6020139, -78.567961, 7/26/21, Kinderton, Project A
+VA21459, 37.5051, -76.677133, 7/26/21, Shackleford, Project A
+VA21461, 36.6262, -78.5655, 7/28/21, Clarksville, Project B
