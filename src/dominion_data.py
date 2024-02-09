@@ -155,8 +155,8 @@ class Transformer:
                 return proj
         return None
     
-    def has_multiple_dominant_projects(self):
-        printed = False
+    def get_dominant_projects(self):
+        ret = []
         dominants = {"Project A": [], "Project B": []}
         for proj in self.projects:
             if proj.interdependency_status == "Project A" or proj.interdependency_status == "Project B":
@@ -164,14 +164,12 @@ class Transformer:
                     dominants[proj.interdependency_status].append(proj)
         if len(dominants["Project A"]) > 1:
             for proj in dominants["Project A"]:
-                print(f'{proj.queue_number}, {proj.lat}, {proj.long}, {proj.queue_date}, {proj.substation_name}, {proj.transformer}, {proj.capacity}, {proj.interdependency_status}')
-            printed = True
+                ret.append((proj.queue_number, f'{proj.queue_number}, {proj.lat}, {proj.long}, {proj.queue_date}, {proj.substation_name}, {proj.transformer}, {proj.capacity}, {proj.interdependency_status}'))
         
         if len(dominants["Project B"]) > 1:
             for proj in dominants["Project B"]:
-                print(f'{proj.queue_number}, {proj.lat}, {proj.long}, {proj.queue_date}, {proj.substation_name}, {proj.transformer}, {proj.capacity}, {proj.interdependency_status}')
-            printed = True
-        return printed
+                ret.append((proj.queue_number, f'{proj.queue_number}, {proj.lat}, {proj.long}, {proj.queue_date}, {proj.substation_name}, {proj.transformer}, {proj.capacity}, {proj.interdependency_status}'))
+        return ret
 
 class Substation:
     def __init__(self, name) -> None:
