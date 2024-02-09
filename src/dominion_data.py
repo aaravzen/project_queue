@@ -1,5 +1,6 @@
 import csv
 import os
+import random
 from datetime import date
 
 
@@ -99,6 +100,10 @@ class Project:
         if self.substation_name == "Winters Branch": self.substation_name = "Winters Branch"
         if self.substation_name == "chickahominy": self.substation_name = "Turner"
     
+    def sanitize_transformer_name(self):
+        raw_name = self.transformer.replace("TX", "").replace("#", "").replace("tx", "")
+        self.transformer = f'TX#{raw_name}'
+
     def get_date(self, filename):
         arr = filename.split("_")
         self.year = int(arr[0])
@@ -125,6 +130,7 @@ class Project:
         self.get_date(filename)
 
         self.sanitize_substation_name()
+        self.sanitize_transformer_name()
     
     def __repr__(self):
         return f"[Project {self.queue_number} ({self.status_code}) - {self.capacity}@T{self.transformer}@S{self.substation_name}]"
@@ -151,6 +157,9 @@ class Transformer:
 class Substation:
     def __init__(self, name) -> None:
         self.name = name
+        self.color = random.choice([
+            "amber", "sky", "emerald", "violet", "rose", "red", "orange", "lime", "green", "teal", "cyan", "blue", "indigo", "fuchsia", "pink"
+        ])
         self.projects = {}
     
     def url(self):
