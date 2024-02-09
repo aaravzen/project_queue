@@ -1,6 +1,7 @@
 import csv
 import os
 
+
 class Project:
     def sanitize_substation_name(self):
         if self.substation_name == "'s Creek": self.substation_name = "Twitty's Creek"
@@ -113,7 +114,7 @@ class Project:
         self.fuel_type = fuel_type
         self.capacity = capacity
         self.substation_name = substation_name
-        self.transformer = transformer
+        self.transformer = transformer.replace(" ", "")
         self.circuit = circuit
         self.queue_date = queue_date
         self.status = status
@@ -127,6 +128,96 @@ class Project:
     def __repr__(self):
         return f"[Project {self.queue_number} ({self.status_code}) - {self.capacity}@T{self.transformer}@S{self.substation_name}]"
 
+class Transformer:
+    def __init__(self, name, year, quarter) -> None:
+        self.name = name
+        self.year = year
+        self.quarter = quarter
+        self.projects = []
+    
+    def add_project(self, project: Project):
+        self.projects.append(project)
+    
+    def get_projects(self):
+        return self.projects
+    
+    def get_project(self, queue_number):
+        for proj in self.projects:
+            if proj.queue_number == queue_number:
+                return proj
+        return None
+
+class Substation:
+    def __init__(self, name) -> None:
+        self.name = name
+        self.projects = {}
+    
+    def calculate(self):
+        self.qToTXs = {}
+        for grouping in self.projects.keys():
+            year, quarter, tx = grouping
+            q = (year,quarter)
+            if q not in self.qToTXs:
+                self.qToTXs[q] = set()
+            self.qToTXs[q].add(tx)
+    
+    def project_grouping(self, project: Project):
+        return (project.year, project.quarter, project.transformer)
+    
+    def add_project(self, project: Project):
+        grouping = self.project_grouping(project)
+        if grouping not in self.projects:
+            year, quarter, name = grouping
+            self.projects[grouping] = Transformer(name, year, quarter)
+        self.projects[grouping].add_project(project)
+        self.calculate()
+    
+    def get_columns(self):
+        return len(self.projects) + 2
+
+    def get_quarters(self):
+        ret = []
+        for q in sorted(self.qToTXs.keys()):
+            ret.append((q, sorted(self.qToTXs[q])))
+        return ret
+    
+    def get_groupings(self):
+        ret = []
+        for quarter,transformers in self.get_quarters():
+            y,q = quarter
+            for t in transformers:
+                grouping = (y,q,t)
+                ret.append(grouping)
+        return ret
+
+    def get_groupings_by_transformer(self):
+        ret = self.get_groupings()
+        ret.sort(key=lambda g: (g[2], g[0], g[1]))
+        return ret
+
+    def get_ordered_queue_numbers(self):
+        ret = []
+        added = set()
+
+        rounds = ["In Service", "In Construction", "In COOP", "Project A", "Project B", "Subordinate", "Cancelled"]
+
+        for round in rounds:
+            for grouping in self.get_groupings_by_transformer():
+                transf = self.projects[grouping]
+                for proj in transf.get_projects():
+                    if proj.interdependency_status == round and proj.queue_number not in added:
+                        added.add(proj.queue_number)
+                        ret.append(proj.queue_number)
+        return ret
+    
+    def get_queue_number_summary(self, queue_number):
+        ret = []
+        for grouping in self.get_groupings():
+            transf = self.projects[grouping]
+            proj = transf.get_project(queue_number)
+            if proj:
+                ret.append(proj)
+        return ret
 
 class DominionData:
     def __init__(self):
@@ -142,14 +233,11 @@ class DominionData:
             "2023_10_30.csv",
             "2024_01_31.csv"
         ]
-        statuses = set()
-        station_count = {}
-        projects = []
+        
+        self.substations = {}
         for fn in file_names:
-            stations = set()
             file_path = os.path.join("data/", fn)
             with open(file_path) as csvfile:
-                # print(fn)
                 reader = csv.DictReader(csvfile)
                 for p in reader:
                     if p["Queue No"].strip() == "" or p["Substation Name"].strip() == "":
@@ -170,33 +258,14 @@ class DominionData:
                         p["IA Executed (A)"],
                         fn
                     )
-                    projects.append(proj)
-                    stations.add(proj.substation_name)
-                    statuses.add(proj.interdependency_status)
-            for station in stations:
-                if station not in station_count:
-                    station_count[station] = 0
-                station_count[station] += 1
-                
-        print("\n".join(s for s in sorted(statuses)))
-        print("")
-        good = 0
-        gs = set()
-        for station in sorted(station_count):
-            if station_count[station] < len(file_names):
-                #print(f'if self.substation_name == "{station}": self.substation_name = "{station}"')
-                print(f"{station} - {station_count[station]}")
-            else:
-                good += 1
-                gs.add(station)
-        print(f"there were {good} good")
-        print("\n".join(s for s in sorted(gs)))
 
-        projToGood = {}
-        for proj in projects:
-            if proj.substation_name in gs:
-                projToGood[proj.queue_number] = proj.substation_name
-        
-        for proj in projects:
-            if proj.queue_number in projToGood and projToGood[proj.queue_number] != proj.substation_name:
-                print(f"queue number {proj.queue_number} matches good {projToGood[proj.queue_number]} as well as {proj.substation_name}")
+                    if proj.substation_name not in self.substations:
+                        self.substations[proj.substation_name] = Substation(proj.substation_name)
+                    self.substations[proj.substation_name].add_project(proj)
+    
+    def get_substation_names(self):
+        return list(self.substations.keys())
+    
+    def get_substation(self, substation_name):
+        return self.substations[substation_name]
+                    
