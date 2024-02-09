@@ -163,26 +163,6 @@ def victoria():
     vp = htmlgen.create_substation_page(victoria_substation)
     print(vp)
 
-def hanover():
-    data = DominionData()
-    substations = data.get_substation_names()
-    print(substations)
-    hanover_substation = data.get_substation("Hanover")
-    
-    htmlgen = HtmlGenerator()
-    hp = htmlgen.create_substation_page(hanover_substation)
-    print(hp)
-
-def lanexa():
-    data = DominionData()
-    substations = data.get_substation_names()
-    hanover_substation = data.get_substation("Lanexa")
-    
-    htmlgen = HtmlGenerator()
-    hp = htmlgen.create_substation_page(hanover_substation)
-    print(hp)
-
 if __name__ == "__main__":
     # victoria()
-    # hanover()
-    lanexa()
+    data = DominionData()
