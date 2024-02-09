@@ -136,10 +136,11 @@ class Project:
         return f"[Project {self.queue_number} ({self.status_code}) - {self.capacity}@T{self.transformer}@S{self.substation_name}]"
 
 class Transformer:
-    def __init__(self, name, year, quarter) -> None:
+    def __init__(self, name, year, quarter, substation_name) -> None:
         self.name = name
         self.year = year
         self.quarter = quarter
+        self.substation_name = substation_name
         self.projects = []
     
     def add_project(self, project: Project):
@@ -153,6 +154,25 @@ class Transformer:
             if proj.queue_number == queue_number:
                 return proj
         return None
+    
+    def has_multiple_dominant_projects(self):
+        printed = False
+        dominants = {"Project A": [], "Project B": []}
+        for proj in self.projects:
+            if proj.interdependency_status == "Project A" or proj.interdependency_status == "Project B":
+                dominants[proj.interdependency_status].append(proj)
+        if len(dominants["Project A"]) > 1:
+            print(f"{self.substation_name} Q{self.quarter}/{self.year} {self.name} Project A")
+            projAs = " ".join(str(d.queue_number) for d in dominants["Project A"])
+            print(f'{projAs}')
+            printed = True
+        
+        if len(dominants["Project B"]) > 1:
+            print(f"{self.substation_name} Q{self.quarter}/{self.year} {self.name} Project B")
+            projBs = " ".join(str(d.queue_number) for d in dominants["Project B"])
+            print(f'{projBs}')
+            printed = True
+        return printed
 
 class Substation:
     def __init__(self, name) -> None:
@@ -182,7 +202,7 @@ class Substation:
         grouping = self.project_grouping(project)
         if grouping not in self.projects:
             year, quarter, name = grouping
-            self.projects[grouping] = Transformer(name, year, quarter)
+            self.projects[grouping] = Transformer(name, year, quarter, self.name)
         self.projects[grouping].add_project(project)
         self.calculate()
     
