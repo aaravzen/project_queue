@@ -7,6 +7,6 @@
                             m = int(m)
                             if y <= 21 and m <= 7:
                                 print(f'{proj.queue_number} at latlong ({proj.lat}, {proj.long}) has been {proj.interdependency_status} since {proj.queue_date}')
-                            if y < 21:
+                            elif y < 21:
                                 print(f'{proj.queue_number} at latlong ({proj.lat}, {proj.long}) has been {proj.interdependency_status} since {proj.queue_date}')
 '''

@@ -1,6 +1,4 @@
 VA17002 at latlong (, ) has been Project A since 1/17/17
-VA17002 at latlong (, ) has been Project A since 1/17/17
-VA18005 at latlong (, ) has been Project A since 2/7/18
 VA18005 at latlong (, ) has been Project A since 2/7/18
 VA18100 at latlong (37.335722, -77.461585) has been Project A since 11/1/18
 VA18101 at latlong (37.312174, -77.461586) has been Project B since 11/1/18
@@ -11,8 +9,6 @@ VA18108 at latlong (37.335928, -77.468536) has been Project B since 11/1/18
 VA18120 at latlong (36.827045, -77.51859) has been Project A since 11/20/18
 VA18121 at latlong (36.827045, -77.51859) has been Project B since 11/20/18
 VA19054 at latlong (37.181384, -77.538173) has been Project B since 5/1/19
-VA19054 at latlong (37.181384, -77.538173) has been Project B since 5/1/19
-VA19081 at latlong (, ) has been Project A since 7/17/19
 VA19081 at latlong (, ) has been Project A since 7/17/19
 VA19106 at latlong (37.5562, -76.4436) has been Project A since 8/26/19
 VA19123 at latlong (37.564517, -76.357082) has been Project B since 9/6/19
@@ -21,20 +17,12 @@ VA19135 at latlong (36.4637, -76.0032) has been Project A since 11/14/19
 VA19143 at latlong (36.714753, -76.679513) has been Project A since 11/27/19
 VA19144 at latlong (36.7146, -76.68662) has been Project B since 11/27/19
 VA20047 at latlong (38.016883, -78.459431) has been Project A since 2/21/20
-VA20047 at latlong (38.016883, -78.459431) has been Project A since 2/21/20
-VA20074 at latlong (38.660199, -78.783753) has been Project A since 4/29/20
 VA20074 at latlong (38.660199, -78.783753) has been Project A since 4/29/20
 VA20075 at latlong (38.660199, -78.783753) has been Project B since 4/29/20
-VA20075 at latlong (38.660199, -78.783753) has been Project B since 4/29/20
-VA20121 at latlong (37.814662, -78.23592) has been Project A since 6/3/20
 VA20121 at latlong (37.814662, -78.23592) has been Project A since 6/3/20
 VA20122 at latlong (37.814662, -78.23592) has been Project B since 6/3/20
-VA20122 at latlong (37.814662, -78.23592) has been Project B since 6/3/20
-VA20133 at latlong (36.823414, -77.48149) has been Project A since 6/16/20
 VA20133 at latlong (36.823414, -77.48149) has been Project A since 6/16/20
 VA20159 at latlong (36.825796, -77.483723) has been Project B since 7/6/20
-VA20159 at latlong (36.825796, -77.483723) has been Project B since 7/6/20
-VA20195 at latlong (37.773667, -77.356397) has been Project A since 7/24/20
 VA20195 at latlong (37.773667, -77.356397) has been Project A since 7/24/20
 VA20201 at latlong (38.023283, -79.019775) has been Project A since 8/4/20
 VA20209 at latlong (37.1887704, -78.21621637) has been Project A since 8/4/20
