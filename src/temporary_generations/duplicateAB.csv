@@ -1,0 +1,241 @@
+Queue Number,Latitute,Longitude,Queue Date,Substation Name,Substation Transformer,Capacity (MW),Interdependency Status
+VA20400, 38.244334, -77.203437, 10/15/20, Arnolds Corner, TX#1, 5, Project B
+VA20479, 38.257822, -77.243459, 10/30/20, Arnolds Corner, TX#1, 1, Project B
+VA20400, 38.244334, -77.203437, 10/15/20, Arnolds Corner, TX#1, 5, Project B
+VA20479, 38.257822, -77.243459, 10/30/20, Arnolds Corner, TX#1, 1, Project B
+VA20400, 38.244334, -77.203437, 10/15/20, Arnolds Corner, TX#1, 5, Project B
+VA20479, 38.257822, -77.243459, 10/30/20, Arnolds Corner, TX#1, 1, Project B
+VA23027, , , 1/24/23, Chase City, TX#1, 20, Project B
+VA23090, , , 4/5/23, Chase City, TX#1, 5, Project B
+VA23027, , , 1/24/23, Chase City, TX#1, 20, Project B
+VA23090, , , 4/5/23, Chase City, TX#1, 5, Project B
+VA23027, , , 1/24/23, Chase City, TX#1, 20, Project B
+VA23090, , , 4/5/23, Chase City, TX#1, 5, Project B
+VA23027, , , 1/24/23, Chase City, TX#1, 20, Project B
+VA23090, , , 4/5/23, Chase City, TX#1, 5, Project B
+VA20251, 36.6182, -78.585983, 9/10/20, Clarksville, TX#1, 5, Project A
+VA21301, 36.621676, -78.621234, 5/3/21, Clarksville, TX#1, 5, Project A
+VA21191, 37.497411, -76.841171, 3/8/21, Correctional, TX#1, 2, Project B
+VA22007, , , 1/10/22, Correctional, TX#1, 5, Project B
+VA21297, 38.36759, -77.48208, 5/3/21, Cranes Corner, TX#2, 3, Project A
+VA23391, , , 9/19/23, Cranes Corner, TX#2, 0, Project A
+VA22251, 38.3618839291315, -77.4725877447426, 9/19/22, Cranes Corner, TX#2, 2.5, Project A
+VA23391, , , 9/19/23, Cranes Corner, TX#2, 0, Project A
+VA21261, 37.179102, -78.110234, 4/3/21, Crewe, TX#1, 5, Project A
+VA20208, 37.1887704, -78.21621637, 8/4/20, Crewe, TX#1, 3, Project A
+VA20208, 37.1887704, -78.21621637, 8/4/20, Crewe, TX#1, 3, Project A
+VA22201, 37.152379, -78.136094, 8/23/22, Crewe, TX#1, 4.98, Project A
+VA20209, 37.1887704, -78.21621637, 8/4/20, Crewe, TX#1, 3, Project B
+VA22217, 37.165817, -78.096444, 9/7/22, Crewe, TX#1, 3, Project B
+VA20209, 37.1887704, -78.21621637, 8/4/20, Crewe, TX#1, 3, Project A
+VA22201, 37.152379, -78.136094, 8/23/22, Crewe, TX#1, 4.98, Project A
+VA21095, 37.183258, -78.189925, 1/28/21, Crewe, TX#1, 5, Project B
+VA22217, 37.165817, -78.096444, 9/7/22, Crewe, TX#1, 3, Project B
+VA20209, 37.1887704, -78.21621637, 8/4/20, Crewe, TX#1, 3, Project A
+VA22201, 37.152379, -78.136094, 8/23/22, Crewe, TX#1, 4.98, Project A
+VA21095, 37.183258, -78.189925, 1/28/21, Crewe, TX#1, 5, Project B
+VA22217, 37.165817, -78.096444, 9/7/22, Crewe, TX#1, 3, Project B
+VA20209, 37.1887704, -78.21621637, 8/4/20, Crewe, TX#1, 3, Project A
+VA22201, 37.152379, -78.136094, 8/23/22, Crewe, TX#1, 4.98, Project A
+VA21095, 37.183258, -78.189925, 1/28/21, Crewe, TX#1, 5, Project B
+VA22217, 37.165817, -78.096444, 9/7/22, Crewe, TX#1, 3, Project B
+VA20209, 37.1887704, -78.21621637, 8/4/20, Crewe, TX#1, 3, Project A
+VA22201, 37.152379, -78.136094, 8/23/22, Crewe, TX#1, 4.98, Project A
+VA21095, 37.183258, -78.189925, 1/28/21, Crewe, TX#1, 5, Project B
+VA22217, 37.165817, -78.096444, 9/7/22, Crewe, TX#1, 3, Project B
+VA20209, 37.1887704, -78.21621637, 8/4/20, Crewe, TX#1, 3, Project A
+VA22201, 37.152379, -78.136094, 8/23/22, Crewe, TX#1, 4.98, Project A
+VA21095, 37.183258, -78.189925, 1/28/21, Crewe, TX#1, 5, Project B
+VA22217, 37.165817, -78.096444, 9/7/22, Crewe, TX#1, 3, Project B
+VA23142, 38.380769, -78.008297, 5/17/23, Culpeper, TX#1, 5, Project A
+VA23454, 38.454732, -77.983116, 10/26/23, Culpeper, TX#1, 0, Project A
+VA21369, 37.20312378, -79.20332451, 2021-06-10, Dominion, TX#1, 0.06, Project A
+VA20218, 37.212744, -79.201062, 2020-08-13, Dominion, TX#1, 4, Project A
+VA20507, 38.102135, -78.982079, 11/16/20, Fishersville, TX#1, 3, Project B
+VA21028, 38.09994, -78.96227, 1/8/21, Fishersville, TX#1, 2, Project B
+VA21263, 36.94549, -79.36237, 4/3/21, Gretna, TX#1, 7, Project B
+VA21554, 36.956724, -79.343817, 9/21/21, Gretna, TX#1, 3, Project B
+VA20290, 37.764667, -77.437185, 10/2/20, Hanover, TX#2, 26, Project A
+VA22183, 37.75512, -77.45976, 8/4/22, Hanover, TX#2, 1.25, Project A
+VA20290, 37.764667, -77.437185, 10/2/20, Hanover, TX#2, 26, Project A
+VA22183, 37.75512, -77.45976, 8/4/22, Hanover, TX#2, 1.25, Project A
+VA20268, 37.760711, -77.47709, 9/22/20, Hanover, TX#4, 0.055, Project A
+VA22309, 37.718128, -77.431794, 10/27/22, Hanover, TX#4, 5, Project A
+VA20290, 37.764667, -77.437185, 10/2/20, Hanover, TX#2, 26, Project A
+VA22183, 37.75512, -77.45976, 8/4/22, Hanover, TX#2, 1.25, Project A
+VA20268, 37.760711, -77.47709, 9/22/20, Hanover, TX#4, 0.055, Project A
+VA22309, 37.718128, -77.431794, 10/27/22, Hanover, TX#4, 5, Project A
+VA20290, 37.764667, -77.437185, 10/2/20, Hanover, TX#2, 26, Project A
+VA22183, 37.75512, -77.45976, 8/4/22, Hanover, TX#2, 1.25, Project A
+VA20268, 37.760711, -77.47709, 9/22/20, Hanover, TX#4, 0.055, Project A
+VA22309, 37.718128, -77.431794, 10/27/22, Hanover, TX#4, 5, Project A
+VA20290, 37.764667, -77.437185, 10/2/20, Hanover, TX#2, 26, Project A
+VA22183, 37.75512, -77.45976, 8/4/22, Hanover, TX#2, 1.25, Project A
+VA20268, 37.760711, -77.47709, 9/22/20, Hanover, TX#4, 0.055, Project A
+VA22309, 37.718128, -77.431794, 10/27/22, Hanover, TX#4, 5, Project A
+VA20290, 37.764667, -77.437185, 10/2/20, Hanover, TX#2, 26, Project A
+VA22183, 37.75512, -77.45976, 8/4/22, Hanover, TX#2, 1.25, Project A
+VA20268, 37.760711, -77.47709, 9/22/20, Hanover, TX#4, 0.055, Project A
+VA22309, 37.718128, -77.431794, 10/27/22, Hanover, TX#4, 5, Project A
+VA20056, 37.312433, -77.473662, 2020-03-24, Harrowgate, TX#3, 5, Project B
+VA18101, 37.312174, -77.461586, 2018-11-01, Harrowgate, TX#3, 15, Project B
+VA18101, 37.312174, -77.461586, 11/1/18, Harrowgate, TX#3, 15, Project B
+VA20056, 37.312433, -77.473662, 3/24/20, Harrowgate, TX#3, 5, Project B
+VA18107, 37.335928, -77.468535, 2018-11-01, Iron Bridge, TX#1, 20, Project A
+VA18108, 37.335928, -77.468536, 2018-11-01, Iron Bridge, TX#1, 11.5, Project A
+VA20217, 37.404221, -77.533606, 2020-08-13, Iron Bridge, TX#1, 1.02, Project B
+VA20060, 37.335928, -77.468535, 2020-03-24, Iron Bridge, TX#1, 5, Project B
+VA18107, 37.335928, -77.468535, 11/1/18, Iron Bridge, TX#1, 20, Project A
+VA18108, 37.335928, -77.468536, 11/1/18, Iron Bridge, TX#1, 11.5, Project A
+VA20060, 37.335928, -77.468535, 3/24/20, Iron Bridge, TX#1, 5, Project B
+VA20217, 37.404221, -77.533606, 8/13/20, Iron Bridge, TX#1, 1.02, Project B
+VA18107, 37.335928, -77.468535, 11/1/18, Iron Bridge, TX#1, 20, Project A
+VA18108, 37.335928, -77.468536, 11/1/18, Iron Bridge, TX#1, 11.5, Project A
+VA18107, 37.335928, -77.468535, 11/1/18, Iron Bridge, TX#1, 20, Project A
+VA18108, 37.335928, -77.468536, 11/1/18, Iron Bridge, TX#1, 11.5, Project A
+VA18107, 37.335928, -77.468535, 11/1/18, Iron Bridge, TX#1, 20, Project A
+VA18108, 37.335928, -77.468536, 11/1/18, Iron Bridge, TX#1, 11.5, Project A
+VA18107, 37.335928, -77.468535, 11/1/18, Iron Bridge, TX#1, 20, Project A
+VA18108, 37.335928, -77.468536, 11/1/18, Iron Bridge, TX#1, 11.5, Project A
+VA18107, 37.335928, -77.468535, 11/1/18, Iron Bridge, TX#1, 20, Project A
+VA18108, 37.335928, -77.468536, 11/1/18, Iron Bridge, TX#1, 11.5, Project A
+VA18107, 37.335928, -77.468535, 11/1/18, Iron Bridge, TX#1, 20, Project A
+VA18108, 37.335928, -77.468536, 11/1/18, Iron Bridge, TX#1, 11.5, Project A
+VA21199, 37.356513, -77.935369, 2021-03-08, Jetersville, TX#1, 3, Project B
+VA20563, 37.225066, -78.151463, 2020-12-21, Jetersville, TX#1, 5, Project B
+VA21266, 37.766506, -76.430635, 4/11/21, Lancaster, TX#3, 3, Project A
+VA22191, 37.72708, -76.385505, 8/4/22, Lancaster, TX#3, 1.25, Project A
+VA21266, 37.766506, -76.430635, 4/11/21, Lancaster, TX#3, 3, Project A
+VA22191, 37.72708, -76.385505, 8/4/22, Lancaster, TX#3, 1.25, Project A
+VA21266, 37.766506, -76.430635, 4/11/21, Lancaster, TX#3, 3, Project A
+VA22191, 37.72708, -76.385505, 8/4/22, Lancaster, TX#3, 1.25, Project A
+VA21266, 37.766506, -76.430635, 4/11/21, Lancaster, TX#3, 3, Project A
+VA22191, 37.72708, -76.385505, 8/4/22, Lancaster, TX#3, 1.25, Project A
+VA20057, 37.335722, -77.461585, 2020-03-24, Locks, TX#3, 5, Project B
+VA19054, 37.181384, -77.538173, 2019-05-01, Locks, TX#3, 20, Project B
+VA21027, 37.269226, -77.513515, 2021-01-08, Locks, TX#4, 2.5, Project B
+VA20547, 37.312174, -77.473586, 2020-12-11, Locks, TX#4, 25, Project B
+VA19054, 37.181384, -77.538173, 5/1/19, Locks, TX#3, 20, Project B
+VA20057, 37.335722, -77.461585, 3/24/20, Locks, TX#3, 5, Project B
+VA20547, 37.312174, -77.473586, 12/11/20, Locks, TX#4, 25, Project B
+VA21027, 37.269226, -77.513515, 1/8/21, Locks, TX#4, 2.5, Project B
+VA20547, 37.312174, -77.473586, 12/11/20, Locks, TX#4, 25, Project B
+VA21027, 37.269226, -77.513515, 1/8/21, Locks, TX#4, 2.5, Project B
+VA21027, 37.269226, -77.513515, 1/8/21, Locks, TX#4, 2.5, Project B
+VA20547, 37.312174, -77.473586, 12/11/20, Locks, TX#4, 25, Project B
+VA20547, 37.312174, -77.473586, 12/11/20, Locks, TX#4, 25, Project A
+VA22176, 37.21665, -77.45142, 7/26/22, Locks, TX#4, 2.5, Project A
+VA20547, 37.312174, -77.473586, 12/11/20, Locks, TX#4, 25, Project A
+VA22176, 37.21665, -77.45142, 7/26/22, Locks, TX#4, 2.5, Project A
+VA21027, 37.269226, -77.513515, 1/8/21, Locks, TX#4, 2.5, Project A
+VA22176, 37.21665, -77.45142, 7/26/22, Locks, TX#4, 2.5, Project A
+VA21027, 37.269226, -77.513515, 1/8/21, Locks, TX#4, 2.5, Project A
+VA22176, 37.21665, -77.45142, 7/26/22, Locks, TX#4, 2.5, Project A
+VA21027, 37.269226, -77.513515, 1/8/21, Locks, TX#4, 2.5, Project A
+VA22176, 37.21665, -77.45142, 7/26/22, Locks, TX#4, 2.5, Project A
+VA21027, 37.269226, -77.513515, 1/8/21, Locks, TX#4, 2.5, Project A
+VA22176, 37.21665, -77.45142, 7/26/22, Locks, TX#4, 2.5, Project A
+VA21296, , , 5/3/21, Louisa, TX#1, 5, Project A
+VA21510, , , 8/25/21, Louisa, TX#1, 0.024, Project A
+VA19135, 36.4637, -76.0032, 11/14/19, Pendleton, TX#2, 10, Project A
+VA23445, 36.771128095, -75.956452827, 10/23/23, Pendleton, TX#2, 1.5, Project A
+VA19135, 36.4637, -76.0032, 11/14/19, Pendleton, TX#2, 10, Project A
+VA23445, 36.771128095, -75.956452827, 10/23/23, Pendleton, TX#2, 1.5, Project A
+VA21105, 37.003444, -79.014583, 1/28/21, Perth, TX#1, 5, Project A
+VA21107, 37.00468, -78.973005, 1/28/21, Perth, TX#1, 5, Project A
+VA21105, 37.003444, -79.014583, 1/28/21, Perth, TX#1, 5, Project A
+VA21107, 37.00468, -78.973005, 1/28/21, Perth, TX#1, 5, Project A
+VA21105, 37.003444, -79.014583, 1/28/21, Perth, TX#1, 5, Project A
+VA21107, 37.00468, -78.973005, 1/28/21, Perth, TX#1, 5, Project A
+VA21105, 37.003444, -79.014583, 1/28/21, Perth, TX#1, 5, Project A
+VA21107, 37.00468, -78.973005, 1/28/21, Perth, TX#1, 5, Project A
+VA21105, 37.003444, -79.014583, 1/28/21, Perth, TX#1, 5, Project A
+VA21107, 37.00468, -78.973005, 1/28/21, Perth, TX#1, 5, Project A
+VA21244, 38.514733, -77.725514, 3/27/21, Remington, TX#2, 20, Project B
+VA21336, 38.546615, -77.753118, 5/19/21, Remington, TX#2, 5, Project B
+VA21244, 38.514733, -77.725514, 3/27/21, Remington, TX#2, 20, Project B
+VA21336, 38.546615, -77.753118, 5/19/21, Remington, TX#2, 5, Project B
+VA21459, 37.5051, -76.677133, 7/26/21, Shackleford, TX#1, 20, Project A
+VA24023, , , 1/10/24, Shackleford, TX#1, 0, Project A
+VA22077, , , 3/30/22, Shellhorn, TX#, , Project A
+VA22078, , , 3/30/22, Shellhorn, TX#, , Project A
+VA22079, , , 3/30/22, Shellhorn, TX#, , Project A
+VA22078, , , 3/30/22, Shellhorn, TX#1, 3, Project A
+VA22079, , , 3/30/22, Shellhorn, TX#1, 3, Project A
+VA21151, 36.72916, -78.98176, 2/16/21, Sinai, TX#2, 5, Project B
+VA20252, 36.757388, -78.936033, 9/10/20, Sinai, TX#2, 5, Project B
+VA20252, 36.757388, -78.936033, 9/10/20, Sinai, TX#2, 5, Project B
+VA21151, 36.72916, -78.98176, 2/16/21, Sinai, TX#2, 5, Project B
+VA20140, 36.884285, -76.691254, 2020-06-16, Smithfield, TX#2, 2, Project A
+VA19132, 36.888545, -76.611078, 2019-10-22, Smithfield, TX#2, 0, Project A
+VA19132, 36.888545, -76.611078, 10/22/19, Smithfield, TX#2, 0, Project A
+VA20140, 36.884285, -76.691254, 6/16/20, Smithfield, TX#2, 2, Project A
+VA19132, 36.888545, -76.611078, 10/22/19, Smithfield, TX#2, 0, Project A
+VA22314, 37.022965, -76.633313, 11/2/22, Smithfield, TX#2, 19.2, Project A
+VA19132, 36.888545, -76.611078, 10/22/19, Smithfield, TX#2, 0, Project A
+VA22314, 37.016496, -76.637656, 11/2/22, Smithfield, TX#2, 19.2, Project A
+VA19132, 36.888545, -76.611078, 10/22/19, Smithfield, TX#2, 0, Project A
+VA22314, 37.016496, -76.637656, 11/2/22, Smithfield, TX#2, 19.2, Project A
+VA19132, 36.888545, -76.611078, 10/22/19, Smithfield, TX#2, 0, Project A
+VA22314, 37.016496, -76.637656, 11/2/22, Smithfield, TX#2, 19.2, Project A
+VA19132, 36.888545, -76.611078, 10/22/19, Smithfield, TX#2, 0, Project A
+VA22314, 37.016496, -76.637656, 11/2/22, Smithfield, TX#2, 19.2, Project A
+VA20301, 38.11349, -78.179505, 10/2/20, Somerset, TX#1, 3, Project B
+VA21449, 38.11114, -78.17614, 7/26/21, Somerset, TX#1, 5, Project B
+VA20269, 36.654628, -76.5800064, 2020-09-22, Suffolk, TX#10, 20, Project B
+VA20160, 36.67914, -76.586381, 2020-07-06, Suffolk, TX#10, 3, Project B
+VA20269, 36.654628, -76.5800064, 9/22/20, Suffolk, TX#10, 20, Project B
+VA20356, 36.654628, -76.5800064, 10/8/20, Suffolk, TX#10, 5, Project B
+VA21360, 36.60834, -77.55679, 6/4/21, Trego, TX#1, 5, Project A
+VA23226, , , 6/23/23, Trego, TX#1, 26, Project A
+VA22064, 36.61399, -77.543248, 3/16/22, Trego, TX#1, 26, Project B
+VA23227, , , 6/23/23, Trego, TX#1, 20, Project B
+VA21283, 37.0069, -78.221, 4/14/21, Victoria, TX#1, 3, Project B
+VA21494, 37.001885, -78.212244, 8/16/21, Victoria, TX#1, 3, Project B
+VA21048, 36.7072, -77.0919, 2021-01-14, Watkins Corner, TX#2, 1, Project A
+VA18089, 36.6806347, -76.973687, 2018-10-12, Watkins Corner, TX#2, 5, Project A
+VA20095, 36.66637222, -76.99326667, 5/12/20, Watkins Corner, TX#2, 7.125, Project A
+VA21048, 36.7072, -77.0919, 1/14/21, Watkins Corner, TX#2, 1, Project A
+VA21161, 36.6852972, -76.7694917, 2/22/21, Watkins Corner, TX#2, 20, Project A
+VA20261, 36.688343, -76.994545, 9/11/20, Watkins Corner, TX#2, 3, Project B
+VA21049, 36.7072, -77.0919, 1/14/21, Watkins Corner, TX#2, 1, Project B
+VA21356, 36.637505, -76.9503, 6/4/21, Watkins Corner, TX#2, 15, Project B
+VA20095, 36.66637222, -76.99326667, 5/12/20, Watkins Corner, TX#2, 7.125, Project A
+VA21161, 36.6852972, -76.7694917, 2/22/21, Watkins Corner, TX#2, 20, Project A
+VA21503, 36.70169, -77.10641, 8/18/21, Watkins Corner, TX#2, 0, Project A
+VA20261, 36.688343, -76.994545, 9/11/20, Watkins Corner, TX#2, 3, Project B
+VA21356, 36.637505, -76.9503, 6/4/21, Watkins Corner, TX#2, 15, Project B
+VA21503, 36.70169, -77.10641, 8/18/21, Watkins Corner, TX#2, 0, Project A
+VA21161, 36.6852972, -76.7694917, 2/22/21, Watkins Corner, TX#2, 20, Project A
+VA20095, 36.66637222, -76.99326667, 5/12/20, Watkins Corner, TX#2, 7.125, Project A
+VA21356, 36.637505, -76.9503, 6/4/21, Watkins Corner, TX#2, 15, Project B
+VA20261, 36.688343, -76.994545, 9/11/20, Watkins Corner, TX#2, 3, Project B
+VA20095, 36.66637222, -76.99326667, 5/12/20, Watkins Corner, TX#2, 7.125, Project A
+VA21161, 36.6852972, -76.7694917, 2/22/21, Watkins Corner, TX#2, 20, Project A
+VA21503, 36.70169, -77.10641, 8/18/21, Watkins Corner, TX#2, 0, Project A
+VA20261, 36.688343, -76.994545, 9/11/20, Watkins Corner, TX#2, 3, Project B
+VA21356, 36.637505, -76.9503, 6/4/21, Watkins Corner, TX#2, 15, Project B
+VA20095, 36.66637222, -76.99326667, 5/12/20, Watkins Corner, TX#2, 7.125, Project A
+VA21161, 36.6852972, -76.7694917, 2/22/21, Watkins Corner, TX#2, 20, Project A
+VA21503, 36.70169, -77.10641, 8/18/21, Watkins Corner, TX#2, 0, Project A
+VA20261, 36.688343, -76.994545, 9/11/20, Watkins Corner, TX#2, 3, Project B
+VA21356, 36.637505, -76.9503, 6/4/21, Watkins Corner, TX#2, 15, Project B
+VA20095, 36.66637222, -76.99326667, 5/12/20, Watkins Corner, TX#2, 6.972, Project A
+VA21161, 36.6852972, -76.7694917, 2/22/21, Watkins Corner, TX#2, 20, Project A
+VA21503, 36.70169, -77.10641, 8/18/21, Watkins Corner, TX#2, 0, Project A
+VA21048, 36.7072, -77.0919, 1/14/21, Watkins Corner, TX#2, 1, Project B
+VA21356, 36.637505, -76.9503, 6/4/21, Watkins Corner, TX#2, 15, Project B
+VA21048, 36.7072, -77.0919, 1/14/21, Watkins Corner, TX#2, 1, Project B
+VA21356, 36.637505, -76.9503, 6/4/21, Watkins Corner, TX#2, 15, Project B
+VA21087, 38.073665, -76.655655, 1/28/21, Westmoreland, TX#1, 1, Project A
+VA22221, 38.0704984, -76.7754918999999, 9/7/22, Westmoreland, TX#1, 0, Project A
+VA21087, 38.073665, -76.655655, 1/28/21, Westmoreland, TX#1, 1, Project A
+VA22221, 38.0704984, -76.7754918999999, 9/7/22, Westmoreland, TX#1, 0, Project A
+VA21087, 38.073665, -76.655655, 1/28/21, Westmoreland, TX#1, 1, Project A
+VA22221, 38.0704984, -76.7754918999999, 9/7/22, Westmoreland, TX#1, 0, Project A
+VA21087, 38.073665, -76.655655, 1/28/21, Westmoreland, TX#1, 1, Project A
+VA22221, 38.0704984, -76.7754918999999, 9/7/22, Westmoreland, TX#1, 0, Project A
+VA21087, 38.073665, -76.655655, 1/28/21, Westmoreland, TX#1, 1, Project A
+VA22221, 38.0704984, -76.7754918999999, 9/7/22, Westmoreland, TX#1, 0, Project A
+VA21087, 38.073665, -76.655655, 1/28/21, Westmoreland, TX#1, 1, Project A
+VA22221, 38.0704984, -76.7754918999999, 9/7/22, Westmoreland, TX#1, 0, Project A

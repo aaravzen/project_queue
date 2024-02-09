@@ -160,17 +160,16 @@ class Transformer:
         dominants = {"Project A": [], "Project B": []}
         for proj in self.projects:
             if proj.interdependency_status == "Project A" or proj.interdependency_status == "Project B":
-                dominants[proj.interdependency_status].append(proj)
+                if proj.status_code == "A":
+                    dominants[proj.interdependency_status].append(proj)
         if len(dominants["Project A"]) > 1:
-            print(f"{self.substation_name} Q{self.quarter}/{self.year} {self.name} Project A")
-            projAs = " ".join(str(d.queue_number) for d in dominants["Project A"])
-            print(f'{projAs}')
+            for proj in dominants["Project A"]:
+                print(f'{proj.queue_number}, {proj.lat}, {proj.long}, {proj.queue_date}, {proj.substation_name}, {proj.transformer}, {proj.capacity}, {proj.interdependency_status}')
             printed = True
         
         if len(dominants["Project B"]) > 1:
-            print(f"{self.substation_name} Q{self.quarter}/{self.year} {self.name} Project B")
-            projBs = " ".join(str(d.queue_number) for d in dominants["Project B"])
-            print(f'{projBs}')
+            for proj in dominants["Project B"]:
+                print(f'{proj.queue_number}, {proj.lat}, {proj.long}, {proj.queue_date}, {proj.substation_name}, {proj.transformer}, {proj.capacity}, {proj.interdependency_status}')
             printed = True
         return printed
 

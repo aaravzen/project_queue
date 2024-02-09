@@ -1,6 +1,8 @@
 from dominion_data import DominionData, Substation
 
 if __name__ == "__main__":
+    print("Queue Number,Latitute,Longitude,Queue Date,Substation Name,Substation Transformer,Capacity (MW),Interdependency Status")
+    
     data = DominionData()
     snames = sorted(data.get_substation_names())
     for sname in snames:
@@ -11,5 +13,5 @@ if __name__ == "__main__":
             transf = sub.projects[grouping]
             if transf.has_multiple_dominant_projects():
                 printed = True
-        if printed:
-            print("")
+        # if printed:
+        #     print("")
