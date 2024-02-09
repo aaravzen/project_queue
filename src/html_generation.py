@@ -1,8 +1,10 @@
+import os
+import random
 from dominion_data import DominionData, Substation
 
 class HtmlGenerator:
     def __init__(self) -> None:
-        pass
+        self.generated_substations = {}
 
     def create_page(self, title, body):
         return f"""<!DOCTYPE html>
@@ -12,7 +14,7 @@ class HtmlGenerator:
     <meta name="viewport" content="initial-scale=1.0">
     <title>{title}</title>
 
-    <link rel="stylesheet" href="styling/output.css">
+    <link rel="stylesheet" href="../styling/output.css">
 </head>
 <body class="bg-slate-800">
 {body}
@@ -86,6 +88,7 @@ class HtmlGenerator:
         if box_type == "Project B": return self.get_project_b(start, span, label)
         if box_type == "Subordinate": return self.get_subordinate(start, span, label)
         if box_type == "Cancelled": return self.get_cancelled(start, span, label)
+        else: return f'<div class="p-1 sm:p-2 col-start-{start} col-span-{span} bg-amber-400 hover:bg-amber-500">{label}UNKNOWN</div>'
 
     def get_date_label(self, date, start):
         return f'<div class="p-1 sm:p-2 col-start-{start} col-span-1 text-green-200 text-xs text-right">{date}</div>'
@@ -108,6 +111,8 @@ class HtmlGenerator:
             boxes.append((proj.interdependency_status, start))
             prev_box = proj.interdependency_status
         
+        # print(f"Trying to get sub project for {label}")
+        # print(f"Boxes {boxes}")
         date_start = boxes[0][1] - 1
         date_label = self.get_date_label(date, date_start)
 
@@ -122,6 +127,8 @@ class HtmlGenerator:
                 substation_view.append(self.get_box(box_type, start, span, label))
             else:
                 substation_view.append(self.get_box(box_type, start, span))
+        
+        # print(f"Sub View {substation_view}")
         substation_view = "\n".join(x for x in substation_view)
 
         return f"""{date_label}
@@ -150,8 +157,57 @@ class HtmlGenerator:
 
 </div>"""
     
+    def get_index_link(self, url, label):
+        colors = [
+            "bg-amber-200 hover:bg-amber-400",
+            "bg-sky-200 hover:bg-sky-400",
+            "bg-emerald-200 hover:bg-emerald-400",
+            "bg-violet-200 hover:bg-violet-400",
+            "bg-rose-200 hover:bg-rose-400",
+            "bg-red-200 hover:bg-red-400",
+            "bg-orange-200 hover:bg-orange-400",
+            "bg-lime-200 hover:bg-lime-400",
+            "bg-green-200 hover:bg-green-400",
+            "bg-teal-200 hover:bg-teal-400",
+            "bg-cyan-200 hover:bg-cyan-400",
+            "bg-blue-200 hover:bg-blue-400",
+            "bg-indigo-200 hover:bg-indigo-400",
+            "bg-fuchsia-200 hover:bg-fuchsia-400",
+            "bg-pink-200 hover:bg-pink-400",
+        ]
+        color = random.choice(colors)
+        return f'<a class="p-1 md:p-2 {color}" href="{url}">{label}</a>'
+
+    def get_index_body(self):
+        links = []
+        for station in sorted(self.generated_substations.keys()):
+            url = self.generated_substations[station]
+            links.append(self.get_index_link(url, station))
+        links = "\n".join(l for l in links)
+
+        return f"""<div class="p-1 md:p-2">
+<h1 class="text-xl text-amber-100">Dominion Fleet Virginia Substations</h1>
+<div class="p-2 md:p-4 flex text-slate-700 gap-2 flex-wrap">
+        
+{links}
+        
+</div>
+</div>"""
+    
     def create_substation_page(self, substation):
-        return self.create_page(substation.name, self.get_substation_body(substation))
+        fn = substation.url()
+        file_path = os.path.join("site/", fn)
+
+        page = self.create_page(substation.name, self.get_substation_body(substation))
+        with open(file_path, "w") as output_file:
+            output_file.write(page)
+        self.generated_substations[substation.name] = fn
+
+    def create_index_page(self):
+        file_path = "site/index.html"
+        page = self.create_page("Dominion Fleet", self.get_index_body())
+        with open(file_path, "w") as output_file:
+            output_file.write(page)
 
 
 def victoria():
@@ -166,3 +222,9 @@ def victoria():
 if __name__ == "__main__":
     # victoria()
     data = DominionData()
+    snames = data.get_substation_names()
+    htmlgen = HtmlGenerator()
+    for sub_name in snames:
+        sub = data.get_substation(sub_name)
+        htmlgen.create_substation_page(sub)
+    htmlgen.create_index_page()

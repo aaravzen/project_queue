@@ -153,6 +153,10 @@ class Substation:
         self.name = name
         self.projects = {}
     
+    def url(self):
+        ret = self.name.replace("(", "").replace(" ", "").replace(")", "").replace("'", "").replace(",", "").replace(".", "")
+        return ret + ".html"
+
     def calculate(self):
         self.qToTXs = {}
         for grouping in self.projects.keys():
