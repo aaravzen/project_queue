@@ -29,3 +29,10 @@ The last steps involve the nitty gritty of the development, so these are the tas
 Delivery of the project involves:
 - Connecting the data with the design templates in order to generate the site
 - Getting the site live and accessible (url generation, deploying, hosting, etc)
+
+## Misc for the developer
+
+### How to run
+
+- `python3 html_generation.py` from `/src/` to generate html
+- `npx tailwindcss -i ./src/styling/input.css -o ./src/styling/output.css --watch` running to regenerate CSS on html generation
