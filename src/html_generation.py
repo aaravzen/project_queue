@@ -7,7 +7,7 @@ class HtmlGenerator:
         self.generated_substations = {}
         self.substation_colors = {}
 
-    def create_page(self, title, body):
+    def create_page(self, title, body, style_link='<link rel="stylesheet" href="../styling/output.css">'):
         return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +15,7 @@ class HtmlGenerator:
     <meta name="viewport" content="initial-scale=1.0">
     <title>{title}</title>
 
-    <link rel="stylesheet" href="../styling/output.css">
+    {style_link}
 </head>
 <body class="bg-slate-800">
 {body}
@@ -162,7 +162,7 @@ class HtmlGenerator:
     
     def get_index_link(self, url, label, color):
         color_css = f"bg-{color}-200 hover:bg-{color}-400"
-        return f'<a class="p-1 md:p-2 {color_css}" href="{url}">{label}</a>'
+        return f'<a class="p-1 md:p-2 {color_css}" href="src/site/{url}">{label}</a>'
 
     def get_index_body(self):
         links = []
@@ -192,8 +192,8 @@ class HtmlGenerator:
         self.substation_colors[substation.name] = substation.color
 
     def create_index_page(self):
-        file_path = "site/index.html"
-        page = self.create_page("Dominion Fleet", self.get_index_body())
+        file_path = "../index.html"
+        page = self.create_page("Dominion Fleet", self.get_index_body(), '<link rel="stylesheet" href="src/styling/output.css">')
         with open(file_path, "w") as output_file:
             output_file.write(page)
 
