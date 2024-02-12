@@ -174,9 +174,9 @@ class Transformer:
 class Substation:
     def __init__(self, name) -> None:
         self.name = name
-        self.color = random.choice([
-            "amber", "sky", "emerald", "violet", "rose", "red", "orange", "lime", "green", "teal", "cyan", "blue", "indigo", "fuchsia", "pink"
-        ])
+        colors = ["amber", "sky", "emerald", "violet", "rose", "red", "orange", "lime", "green", "teal", "cyan", "blue", "indigo", "fuchsia", "pink"]
+        index = hash(self.name) % len(colors)
+        self.color = colors[index]
         self.projects = {}
     
     def url(self):

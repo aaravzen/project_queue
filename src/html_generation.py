@@ -7,7 +7,8 @@ class HtmlGenerator:
         self.generated_substations = {}
         self.substation_colors = {}
 
-    def create_page(self, title, body, style_link='<link rel="stylesheet" href="../styling/output.css">'):
+    def create_page(self, title, body, style_link='<link rel="stylesheet" href="../styling/output.css">', color="slate"):
+        color_hue = 'bg-slate-800' if color == "slate" else f'bg-{color}-950'
         return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +18,7 @@ class HtmlGenerator:
 
     {style_link}
 </head>
-<body class="bg-slate-800">
+<body class="{color_hue}">
 {body}
 </body>
 </html>"""
@@ -93,8 +94,12 @@ class HtmlGenerator:
         if box_type == "Cancelled": return self.get_cancelled(start, end, label)
         else: return f'<div class="p-1 sm:p-2 col-start-[{start}] col-end-[{end}] bg-amber-400 hover:bg-amber-500">{label} UNKNOWN</div>'
 
-    def get_date_label(self, date, start):
-        return f'<div class="p-1 sm:p-2 col-start-[{start}] col-span-1 text-green-200 text-xs text-right">{date}</div>'
+    def get_date_label(self, date, end):
+        if end == 2:
+            location = "col-start-1 col-end-1"
+        else:
+            location = f"col-start-2 col-end-[{end}] bg-slate-700"
+        return f'<div class="p-1 sm:p-2 {location} text-green-200 text-xs text-right">{date}</div>'
 
     def get_substation_project(self, substation: Substation, queue_number):
         projects = substation.get_queue_number_summary(queue_number)
@@ -116,8 +121,8 @@ class HtmlGenerator:
         
         # print(f"Trying to get sub project for {label}")
         # print(f"Boxes {boxes}")
-        date_start = boxes[0][1] - 1
-        date_label = self.get_date_label(date, date_start)
+        date_end = boxes[0][1]
+        date_label = self.get_date_label(date, date_end)
 
         substation_view = []
         for idx,box in enumerate(boxes):
@@ -162,7 +167,7 @@ class HtmlGenerator:
     
     def get_index_link(self, url, label, color):
         color_css = f"bg-{color}-200 hover:bg-{color}-400"
-        return f'<a class="p-1 md:p-2 {color_css}" href="src/site/{url}">{label}</a>'
+        return f'<a class="p-1 md:p-2 rounded-md {color_css}" href="src/site/{url}">{label}</a>'
 
     def get_index_body(self):
         links = []
@@ -185,7 +190,7 @@ class HtmlGenerator:
         fn = substation.url()
         file_path = os.path.join("site/", fn)
 
-        page = self.create_page(substation.name, self.get_substation_body(substation))
+        page = self.create_page(substation.name, self.get_substation_body(substation), color=substation.color)
         with open(file_path, "w") as output_file:
             output_file.write(page)
         self.generated_substations[substation.name] = fn
@@ -193,7 +198,7 @@ class HtmlGenerator:
 
     def create_index_page(self):
         file_path = "../index.html"
-        page = self.create_page("Dominion Fleet", self.get_index_body(), '<link rel="stylesheet" href="src/styling/output.css">')
+        page = self.create_page("Dominion Fleet", self.get_index_body(), style_link='<link rel="stylesheet" href="src/styling/output.css">')
         with open(file_path, "w") as output_file:
             output_file.write(page)
 
