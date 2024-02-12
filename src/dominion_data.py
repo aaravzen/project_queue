@@ -155,19 +155,26 @@ class Transformer:
                 return proj
         return None
     
-    def get_dominant_projects(self):
+    def get_duplicate_dominant_projects(self):
         ret = []
-        dominants = {"Project A": [], "Project B": []}
+        proj_as = self.get_proj_as()
+        proj_bs = self.get_proj_bs()
+        if len(proj_as) > 1:
+            ret.extend(proj_as)
+        if len(proj_bs) > 1:
+            ret.extend(proj_bs)
+        return ret
+    
+    def get_proj_as(self):
+        return self.get_projs("Project A")
+    
+    def get_proj_bs(self):
+        return self.get_projs("Project B")
+    
+    def get_projs(self, interdependency_status):
+        ret = []
         for proj in self.projects:
-            if proj.interdependency_status == "Project A" or proj.interdependency_status == "Project B":
-                if proj.status_code == "A":
-                    dominants[proj.interdependency_status].append(proj)
-        if len(dominants["Project A"]) > 1:
-            for proj in dominants["Project A"]:
-                ret.append((proj.queue_number, f'{proj.queue_number}, {proj.lat}, {proj.long}, {proj.queue_date}, {proj.substation_name}, {proj.transformer}, {proj.capacity}, {proj.interdependency_status}'))
-        
-        if len(dominants["Project B"]) > 1:
-            for proj in dominants["Project B"]:
+            if proj.interdependency_status == interdependency_status and proj.status_code == "A":
                 ret.append((proj.queue_number, f'{proj.queue_number}, {proj.lat}, {proj.long}, {proj.queue_date}, {proj.substation_name}, {proj.transformer}, {proj.capacity}, {proj.interdependency_status}'))
         return ret
 

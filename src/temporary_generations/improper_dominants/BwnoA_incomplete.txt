@@ -1,0 +1,97 @@
+Queue Number,Latitute,Longitude,Queue Date,Substation Name,Substation Transformer,Capacity (MW),Interdependency Status
+(2021, 2)
+VA20427, 37.465877, -78.309703, 2020-10-16, Buckingham, TX#2, 3, Project B
+VA21208, 38.361883, -77.472587, 2021-03-08, Cranes Corner, TX#2, 3, Project B
+VA21361, 0, 0, 2021-06-04, Dumfries, TX#?, 20, Project B
+VA20342, 37.819165, -76.798386, 2020-10-08, Dunnsville, TX#1, 5, Project B
+VA20136, 37.330539, -78.385795, 2020-06-16, Farmville, TX#1, 3, Project B
+VA20557, 37.53345666, -79.67076601, 2020-12-21, Glasgow, TX#1, 4.89, Project B
+VA20125, 36.8469, -77.4344, 2020-06-03, Jarratt, TX#3, 3, Project B
+VA21199, 37.356513, -77.935369, 2021-03-08, Jetersville, TX#1, 3, Project B
+VA20563, 37.225066, -78.151463, 2020-12-21, Jetersville, TX#1, 5, Project B
+VA21027, 37.269226, -77.513515, 2021-01-08, Locks, TX#4, 2.5, Project B
+VA20547, 37.312174, -77.473586, 2020-12-11, Locks, TX#4, 25, Project B
+VA20395, 37.501531, -77.701263, 2020-10-14, Midlothian, TX#TBD, 20, Project B
+VA20004, 37.333591, -77.094756, 2020-01-07, Providence Forge, TX#NEW, 20, Project B
+VA21357, 36.944935, -77.474075, 2021-06-04, Sapony, TX#TBD, 20, Project B
+VA21068, 36.726555, -78.111857, 2021-01-28, South Hill, TX#, 2, Project B
+VA20269, 36.654628, -76.5800064, 2020-09-22, Suffolk, TX#10, 20, Project B
+VA20160, 36.67914, -76.586381, 2020-07-06, Suffolk, TX#10, 3, Project B
+VA21346, 0, 0, 2021-05-26, Warrenton, TX#Tx1, 3, Project B
+VA19009, 36.677802, -76.979639, 2019-01-23, Watkins Corner, TX#1, 10, Project B
+VA20145, 37.573428, -76.850561, 2020-06-16, Westpoint, TX#2, 3, Project B
+(2022, 1)
+VA20400, 38.244334, -77.203437, 10/15/20, Arnolds Corner, TX#1, 5, Project B
+VA21212, 36.7313, -78.72278, 3/8/21, Dryburg, TX#1, 3, Project B
+VA21594, 37.819519, -76.831179, 10/20/21, Dunnsville, TX#2, 20, Project B
+VA18120, 36.827045, -77.51859, 11/20/18, Fields, TX#NEW, 20, Project B
+VA21242, 37.62348, -79.5121, 3/27/21, Glasgow, TX#1, 5, Project B
+VA21507, , , 8/25/21, Mount Eagle, TX#1, 4, Project B
+VA21105, 37.003444, -79.014583, 1/28/21, Perth, TX#1, 5, Project B
+VA19091, 37.034765, -76.663788, 8/12/19, Poolesville, TX#1, 13, Project B
+VA19139, 36.945414, -77.746375, 11/27/19, Sapony, TX#1, 15.9, Project B
+VA21206, 36.811026, -76.249556, 3/8/21, South Norfolk, TX#3, 0.8, Project B
+VA20356, 36.654628, -76.5800064, 10/8/20, Suffolk, TX#10, 5, Project B
+VA20339, 38.10672, -76.853082, 10/8/20, Westmoreland, TX#1, 5, Project B
+(2022, 2)
+VA18121, 36.827045, -77.51859, 11/20/18, Fields, TX#NEW2, 13.5, Project B
+VA20507, 38.102135, -78.982079, 11/16/20, Fishersville, TX#1, 3, Project B
+VA21028, 38.09994, -78.96227, 1/8/21, Fishersville, TX#1, 2, Project B
+VA22028, 38.484565, -78.850441, 2/9/22, Harrisonburg, TX#10, 14.995, Project B
+VA20301, 38.11349, -78.179505, 10/2/20, Somerset, TX#1, 3, Project B
+VA21449, 38.11114, -78.17614, 7/26/21, Somerset, TX#1, 5, Project B
+(2022, 3)
+VA20512, 38.368317, -78.935737, 11/17/20, Dayton, TX#1, 4.89, Project B
+VA21447, 37.33843, -76.80423, 7/21/21, Lightfoot, TX#1, 0.24, Project B
+VA20367, 37.659867, -77.22097, 10/9/20, Old Church, TX#1, 1, Project B
+VA20005, , , 1/7/20, Providence Forge, TX#1, 20, Project B
+VA21456, 37.014388, -77.67555, 7/26/21, Sapony, TX#2, 2, Project B
+VA21151, 36.72916, -78.98176, 2/16/21, Sinai, TX#2, 5, Project B
+VA20252, 36.757388, -78.936033, 9/10/20, Sinai, TX#2, 5, Project B
+VA21411, 36.710659, -76.564324, 7/2/21, Suffolk, TX#11, 3, Project B
+(2022, 4)
+VA21500, 37.467286, -77.467286, 8/18/21, Midlothian, TX#1, 5, Project B
+VA20323, 37.38264, -76.584511, 10/8/20, White Marsh, TX#1, 4, Project B
+(2023, 1)
+VA21025, 37.509722, -78.452038, 1/8/21, Buckingham, TX#1or3, 5, Project B
+VA22310, 37.718128, -77.431794, 10/27/22, Hanover, TX#, 5, Project B
+VA21508, 37.23099, -77.05216, 8/25/21, Hopewell, TX#7, 4, Project B
+VA21541, 37.702754, -76.391418, 9/10/21, Lancaster, TX#1, 2, Project B
+VA23001, 37.67722, -77.25675, 1/3/23, Old Church, TX#2, 2.997, Project B
+VA22327, 37.1458, -79.049, 11/2/22, Perth, TX#2, 3, Project B
+VA22205, 37.580744, -77.939047, 8/23/22, Powhatan, TX#2, 15, Project B
+(2023, 2)
+VA20228, 36.776944, -79.3875, 8/26/20, Banister, TX#2, 5, Project B
+VA23034, 37.51012, -77.36313, 2/2/23, Charles City Road, TX#1, 20, Project B
+VA23027, , , 1/24/23, Chase City, TX#1, 20, Project B
+VA23090, , , 4/5/23, Chase City, TX#1, 5, Project B
+VA21066, 38.1803, -76.9703, 1/28/21, Oak Grove, TX#1, 5, Project B
+VA22293, 37.580744, -77.939047, 10/20/22, Powhatan, TX#2, 10, Project B
+VA21283, 37.0069, -78.221, 4/14/21, Victoria, TX#1, 3, Project B
+VA21494, 37.001885, -78.212244, 8/16/21, Victoria, TX#1, 3, Project B
+VA21642, 37.020847, -77.101807, 11/22/21, Waverly, TX#1, 5, Project B
+(2023, 3)
+VA23082, , , 3/22/23, Altavista, TX#5, 5, Project B
+VA20479, 38.257822, -77.243459, 10/30/20, Arnolds Corner, TX#1, 1, Project B
+VA21263, 36.94549, -79.36237, 4/3/21, Gretna, TX#1, 7, Project B
+VA21554, 36.956724, -79.343817, 9/21/21, Gretna, TX#1, 3, Project B
+VA18101, 37.312174, -77.461586, 11/1/18, Harrowgate, TX#3, 15, Project B
+VA22331, 37.217, -78.15, 11/2/22, Jetersville, TX#1, 3, Project B
+VA21390, 37.09959, -79.31029, 6/22/21, Otter River, TX#2, 2, Project B
+VA22180, 37.281479, -78.618935, 8/4/22, Pamplin, TX#4, 3, Project B
+VA23132, , , 5/3/23, Reedy Creek, TX#2, 4.99, Project B
+VA21559, 37.348183, -78.933375, 9/28/21, South Creek, TX#2, 5, Project B
+VA20538, 36.730905, -78.112708, 12/7/20, South Hill, TX#2, 5, Project B
+VA22001, 37.1208, -76.85177, 1/5/22, Wakefield, TX#TBD, 3, Project B
+VA23174, , , 6/7/23, White Stone, TX#1, 0.999, Project B
+(2023, 4)
+VA23190, 38.35053, -77.4763, 6/14/23, Cranes Corner, TX#1, 3, Project B
+VA22319, 36.9858739, -79.3271748, 11/2/22, Gretna, TX#3, 3, Project B
+VA23286, , , 7/14/23, Powhatan, TX#1, 3, Project B
+VA23297, 37.020592, -76.63041, 7/25/23, Smithfield, TX#2., 19.2, Project B
+VA21091, 36.927688, -76.97999, 1/28/21, Wakefield, TX#1, 1, Project B
+(2024, 1)
+VA21420, 36.764389, -79.414944, 7/7/21, Banister, TX#2, 5, Project B
+VA23335, , , 8/14/23, Flaggy Run, TX#1, 0.24, Project B
+VA23492, , , 11/30/23, Gordonsville, TX#2, 3, Project B
+VA21167, 36.745028, -78.992509, 2/22/21, Sinai, TX#2, 5, Project B
