@@ -69,6 +69,22 @@ def get_and_print_proj_b_with_no_proj_a():
             for line in printers[printer]:
                 print(line)
 
+def print_proj(queue_number):
+    data = DominionData()
+    snames = sorted(data.get_substation_names())
+    printers = {}
+    for sname in snames:
+        sub = data.get_substation(sname)
+        groupings = sub.get_groupings()
+        for grouping in groupings:
+            y,q,t = grouping
+            transf = sub.projects[grouping]
+            proj = transf.get_project(queue_number)
+            if proj:
+                print(f'{y}Q{q}: {proj}')
+
+
 if __name__ == "__main__":
     # get_and_print_duplicates()
-    get_and_print_proj_b_with_no_proj_a()
+    # get_and_print_proj_b_with_no_proj_a()
+    print_proj("VA22044")
