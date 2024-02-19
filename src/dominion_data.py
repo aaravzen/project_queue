@@ -1,7 +1,8 @@
 import csv
 import os
-import random
+# import random
 from datetime import date
+import hashlib
 
 
 class Project:
@@ -182,7 +183,9 @@ class Substation:
     def __init__(self, name) -> None:
         self.name = name
         colors = ["amber", "sky", "emerald", "violet", "rose", "red", "orange", "lime", "green", "teal", "cyan", "blue", "indigo", "fuchsia", "pink"]
-        index = hash(self.name) % len(colors)
+        h = hashlib.new('sha256')
+        h.update(self.name.encode())
+        index = int(h.hexdigest(), 16) % len(colors)
         self.color = colors[index]
         self.projects = {}
     

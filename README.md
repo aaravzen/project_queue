@@ -42,6 +42,7 @@ After meeting with Ryan regarding the initial site iteration, he discussed immed
 - Generation of csvs for specific data inquiries
 - Filtering and viewing fuel type
 - Addition of data sources for statistic generation. (Also: the statistic calculations).
+- Correlation of data based on Hexagon established standard, generation of overlapping substation data.
 
 While browsing the initial iteration of the site, Ryan and Aarav noticed some data discrepencies in the visualizations. Per these observations, Aarav generated csvs of relevant data sets for Ryan's use (in `src/temporary_generations`). These include finding transformers with conflicting dominant projects (eg. `2 queue numbers marked "Project A" on the same Substation on the same Transformer`) and inconsistent dominant projects (ie. `a Transformer that has a "Project B" but no "Project A"`).
 
@@ -54,6 +55,7 @@ Ryan also provided additional data to incorporate into the visualizations, which
 - Modification of project box and labels as per handwritten drawings
 - Generation of stats and sketch/mockup/template for stats visualizations (for Transformers and Substations)
 - Fixing boxes for broken assumption of unchanging queue_number capacity.
+- Index page additions (categorization based on number of projects, containing identified bad data, combined substations with overlapping data)
 
 ## Misc for the developer
 

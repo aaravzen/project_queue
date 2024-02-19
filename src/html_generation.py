@@ -178,8 +178,8 @@ class HtmlGenerator:
         links = "\n".join(l for l in links)
 
         return f"""<div class="p-1 md:p-2">
-<h1 class="text-xl text-amber-100">Dominion Fleet Virginia Substations</h1>
-<div class="p-2 md:p-4 flex text-slate-700 gap-2 flex-wrap">
+<h1 class="p-2 text-xl text-amber-100">Dominion Fleet Virginia Substations</h1>
+<div class="p-2 flex text-slate-700 gap-2 flex-wrap">
         
 {links}
         
